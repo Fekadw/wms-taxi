@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WMS Premium Taxi | Frankfurt</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-area">
+                <a href="#home" class="wms-logo-container">
+                    <span class="wms-main">WMS</span>
+                    <span class="wms-sub">Premium Service</span>
+                </a>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#ueber-uns">Über Uns</a></li>
+                    <li><a href="#leistungen">Leistungen</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                    <li><a href="#impressum">Impressum</a></li>
+                </ul>
+            </nav>
+            <div class="header-contact">
+                <a href="tel:+491786670692" class="phone-link">
+                    <i class="fas fa-phone-alt"></i> +49 178 66 70 692
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content-right">
+            <div class="hero-box">
+                <span class="badge">Willkommen bei WMS</span>
+                <h1>Erstklassig ans Ziel.</h1>
+                <p>Ihr exklusiver Fahrkomfort in Frankfurt am Main. Pünktlich, sicher und diskret – 24 Stunden am Tag für Sie bereit.</p> <br><br>
+                <div class="hero-actions">
+                    <a href="#kontakt" class="btn-gold">Online Anfrage</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="page-wrapper">
+        <section id="ueber-uns" class="section about">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="/logo.jpg" alt="WMS Premium Taxi">
+                </div>
+                <div class="about-card">
+                    <span class="badge">Exzellenz auf Rädern</span>
+                    <h2>Pünktlichkeit & Sicherheit</h2>
+                    <p>WMS steht für erstklassigen Fahrkomfort. Wir bringen Sie sicher an Ihr Ziel – egal ob Business-Trip, Flughafentransfer oder Privatfahrt.</p>
+                    <ul class="premium-list">
+                        <li><i class="fas fa-check-circle"></i> 24/7 Einsatzbereitschaft</li>
+                        <li><i class="fas fa-check-circle"></i> Modernste & saubere Fahrzeuge</li>
+                        <li><i class="fas fa-check-circle"></i> Erfahrene & diskrete Chauffeure</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="leistungen" class="section services">
+            <div class="section-header">
+                <span class="badge">Unsere Expertise</span>
+                <h2>Exklusive Leistungen</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-item">
+                    <i class="fas fa-plane-departure"></i>
+                    <h3>Flughafentransfer</h3>
+                    <p>Stressfreie Fahrt zum Flughafen Frankfurt (FRA) inklusive Terminal-Abholung.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Business Fahrten</h3>
+                    <p>Professioneller Chauffeurservice für Ihre Termine – diskret und zuverlässig.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-heartbeat"></i>
+                    <h3>Krankenfahrten</h3>
+                    <p>Zertifizierte Fahrten zum Arzt oder Krankenhaus mit direkter Kassenabrechnung.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-box-open"></i>
+                    <h3>Kurierservice</h3>
+                    <p>Schnelle und sichere Zustellung Ihrer Dokumente oder Pakete am selben Tag.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="kontakt" class="section booking">
+            <div class="booking-wrapper">
+                <div class="booking-form">
+                    <h2>Fahrtanfrage senden</h2>
+                    <form action="https://formspree.io/f/mvgadqry" method="POST">
+    <div class="input-row">
+        <input type="text" name="name" placeholder="Vollständiger Name" required>
+        <input type="email" name="email" placeholder="E-Mail" required>
+    </div>
+    
+    <div class="input-row">
+        <input type="date" name="datum" required>
+        <input type="time" name="uhrzeit" required>
+    </div>
+
+    <div class="route-container">
+        <div class="route-line"></div>
+        <div class="route-inputs">
+            <div class="input-with-icon">
+                <i class="fas fa-circle start-dot"></i>
+                <input type="text" name="abholort" placeholder="Abholort (Straße, Stadt)" required>
+            </div>
+            <div class="input-with-icon">
+                <i class="fas fa-map-marker-alt end-dot"></i>
+                <input type="text" name="zielort" placeholder="Zielort (Zieladresse)" required>
+            </div>
+        </div>
+    </div>
+    
+    <textarea name="nachricht" rows="4" placeholder="Besondere Wünsche (Personenanzahl, Gepäck...)"></textarea>
+    <button type="submit" class="submit-btn">KOSTENLOSE ANFRAGE ABSCHICKEN</button>
+</form>
+                </div>
+            </div>
+        </section>
+
+        <section id="impressum" class="section impressum">
+            <div class="section-header">
+                <span class="badge">Rechtliches</span>
+                <h2>Impressum</h2>
+            </div>
+            <div class="impressum-content" style="text-align: center; color: #aaa;">
+                <p><strong>WMS Premium Taxi Service</strong><br>
+                Herbesthalerstr.6, 65929 Frankfurt am Main</p>
+                <p>Telefon: +49 178 66 70692<br>
+                E-Mail: book@wms-taxi.de</p>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 WMS Premium Service Frankfurt</p>
+    </footer>
+
+    <a href="https://wa.me/4969558800?text=Hallo%20WMS%20Taxi%2C%20ich%20benötige%20eine%20Fahrt." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>WhatsApp Call</span>
+    </a>
+
+</body>
+</html>
