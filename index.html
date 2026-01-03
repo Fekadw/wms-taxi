@@ -3,100 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WMS Premium Taxi | Frankfurt</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>  WMS Premium Mietwagen </title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css" 
 </head>
+
+
 <body>
 
-    <header class="main-header">
-        <div class="header-container">
-            <div class="logo-area">
-                <a href="#home" class="wms-logo-container">
-                    <span class="wms-main">WMS</span>
-                    <span class="wms-sub">Premium Service</span>
-                </a>
-            </div>
-            <nav class="navigation">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#ueber-uns">Über Uns</a></li>
-                    <li><a href="#leistungen">Leistungen</a></li>
-                    <li><a href="#kontakt">Kontakt</a></li>
-                    <li><a href="#impressum">Impressum</a></li>
-                </ul>
-            </nav>
-            <div class="header-contact">
-                <a href="tel:+491786670692" class="phone-link">
-                    <i class="fas fa-phone-alt"></i> +49 178 66 70 692
-                </a>
-            </div>
-        </div>
-    </header>
+    <a href="https://wa.me/49123456789" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
-    <section id="home" class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content-right">
-            <div class="hero-box">
-                <span class="badge">Willkommen bei WMS</span>
-                <h1>Erstklassig ans Ziel.</h1>
-                <p>Ihr exklusiver Fahrkomfort in Frankfurt am Main. Pünktlich, sicher und diskret – 24 Stunden am Tag für Sie bereit.</p> <br><br>
-                <div class="hero-actions">
-                    <a href="#kontakt" class="btn-gold">Online Anfrage</a>
-                </div>
+   <header>
+    <div class="logo">
+        <img src="logo.jpg" alt="WMS Logo" class="logo-img">
+        <span>WMS-Mietwagen Service</span>
+    </div>
+
+    <input type="checkbox" id="check">
+    <label for="check" class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </label>
+
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#uber-uns">Über Uns</a></li>
+        <li><a href="#leistungen">Leistungen</a></li>
+        <li><a href="#kontakt">Bestellung</a></li>
+        <li><a href="#impressum">Impressum</a></li>
+    </ul>
+</header>
+
+    <section id="home">
+        <span class="subtitle">Premium Mietwagen Service</span>
+        <h1 style="font-size: clamp(2rem, 8vw, 4rem);">First Class Driving</h1>
+        <div style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; margin-top: 30px;">
+            <a href="#kontakt" style="background: var(--gold); color: black; padding: 15px 30px; text-decoration: none; font-weight: bold; border-radius: 5px;">RESERVIEREN</a>
+            <a href="https://wa.me/491786670692" style="background: var(--whatsapp-green); color: white; padding: 15px 30px; text-decoration: none; font-weight: bold; border-radius: 5px;"><i class="fab fa-whatsapp"></i> WHATSAPP</a>
+        </div>
+    </section>
+
+    <section id="uber-uns">
+        <span class="subtitle">Unsere Philosophie</span>
+        <h2 class="main-title">Tradition & Komfort</h2>
+        <div class="about-grid">
+            <div>
+                <p style="color: var(--white); font-size: 1.1rem; margin-bottom: 20px;">Mehr als nur eine Fahrt – ein Erlebnis in puncto Pünktlichkeit und Stil.</p>
+                <p style="color: var(--text-gray);">Seit über zwei Jahrzehnten steht ExklusivTaxi für erstklassige Personenbeförderung. Wir setzen auf absolute Diskretion, bestens geschulte Chauffeure und eine Fahrzeugflotte, die keine Wünsche offen lässt.</p>
+            </div>
+            <div class="why-us-box">
+                <h3 style="color: var(--gold); margin-bottom: 15px;">Warum wir?</h3>
+                <ul style="list-style: none;">
+                    <li><i class="fas fa-check-circle" style="color: var(--gold); margin-right: 10px;"></i> 24/7 Erreichbarkeit</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--gold); margin-right: 10px;"></i> Premium Fahrzeuge</li>
+                    <li><i class="fas fa-check-circle" style="color: var(--gold); margin-right: 10px;"></i> Diskrete Chauffeure</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <div class="page-wrapper">
-        <section id="ueber-uns" class="section about">
-            <div class="about-grid">
-                <div class="about-image">
-                    <img src="logo.jpg" alt="WMS Premium Taxi">
-                </div>
-                <div class="about-card">
-                    <span class="badge">Exzellenz auf Rädern</span>
-                    <h2>Pünktlichkeit & Sicherheit</h2>
-                    <p>WMS steht für erstklassigen Fahrkomfort. Wir bringen Sie sicher an Ihr Ziel – egal ob Business-Trip, Flughafentransfer oder Privatfahrt.</p>
-                    <ul class="premium-list">
-                        <li><i class="fas fa-check-circle"></i> 24/7 Einsatzbereitschaft</li>
-                        <li><i class="fas fa-check-circle"></i> Modernste & saubere Fahrzeuge</li>
-                        <li><i class="fas fa-check-circle"></i> Erfahrene & diskrete Chauffeure</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+    <section id="leistungen">
+        <span class="subtitle">Services</span>
+        <h2 class="main-title">Exklusive Fahrten</h2>
+        <div class="services-grid">
+            <div class="service-card"><i class="fas fa-plane"></i><h3>Flughafen</h3><p>Transfer zum FRA Terminal.</p></div>
+            <div class="service-card"><i class="fas fa-briefcase"></i><h3>Business</h3><p>Für Ihre Geschäftstermine.</p></div>
+            <div class="service-card"><i class="fas fa-heartbeat"></i><h3>Krankenfahrten</h3><p>Direkte Kassenabrechnung.</p></div>
+            <div class="service-card"><i class="fas fa-box-open"></i><h3>Kurier</h3><p>Express-Zustellungen.</p></div>
+        </div>
+    </section>
 
-        <section id="leistungen" class="section services">
-            <div class="section-header">
-                <span class="badge">Unsere Expertise</span>
-                <h2>Exklusive Leistungen</h2>
-            </div>
-            <div class="services-grid">
-                <div class="service-item">
-                    <i class="fas fa-plane-departure"></i>
-                    <h3>Flughafentransfer</h3>
-                    <p>Stressfreie Fahrt zum Flughafen Frankfurt (FRA) inklusive Terminal-Abholung.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-briefcase"></i>
-                    <h3>Business Fahrten</h3>
-                    <p>Professioneller Chauffeurservice für Ihre Termine – diskret und zuverlässig.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-heartbeat"></i>
-                    <h3>Krankenfahrten</h3>
-                    <p>Zertifizierte Fahrten zum Arzt oder Krankenhaus mit direkter Kassenabrechnung.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-box-open"></i>
-                    <h3>Kurierservice</h3>
-                    <p>Schnelle und sichere Zustellung Ihrer Dokumente oder Pakete am selben Tag.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="kontakt" class="section booking">
+     <section id="kontakt" class="section booking">
             <div class="booking-wrapper">
                 <div class="booking-form">
                     <h2>Fahrtanfrage senden</h2>
@@ -132,32 +111,40 @@
             </div>
         </section>
 
-        <section id="impressum" class="section impressum">
-            <div class="section-header">
-                <span class="badge">Rechtliches</span>
-                <h2>Impressum</h2>
+    <footer id="impressum">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Kontakt</h4>
+                <p><a href="tel:+491786670692" style="color:white;"><i class="fas fa-phone"></i> +49 178 66 70692</a></p>
+                <p><i class="fas fa-envelope"></i> info@WMS.de</p>
             </div>
-            <div class="impressum-content" style="text-align: center; color: #aaa;">
-                <p><strong>WMS Premium Taxi Service</strong><br>
-                Herbesthalerstr.6 <br>
-                    65929 Frankfurt am Main</p>
-                <p>Telefon: +49 178 66 70692<br>
-                E-Mail: book@wms-taxi.de</p>
+            <div class="footer-col">
+                <h4>Impressum</h4>
+                <p>WMS Mietwagen Service<br>Inh. Fekadu Woldesenbet<br>Herbesthalerstr.6 , 65929 Frankfurt am Main</p>
             </div>
-        </section>
-    </div>
-
-    <footer class="footer">
-        <p>&copy; 2025 WMS Premium Service Frankfurt</p>
+        </div>
+        <div style="text-align: center; padding-top: 20px; border-top: 1px solid #222; font-size: 0.8rem;">
+            &copy; 2026 ExklusivMieatwagen Service.
+        </div>
     </footer>
 
-    <a href="https://wa.me/491786670692?text=Hallo%20WMS%20Taxi%2C%20ich%20benötige%20eine%20Fahrt." class="whatsapp-float" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-        <span>WhatsApp Call</span>
-    </a>
+    <script>
+        // Fix: Menü schließen, wenn man einen Link anklickt
+        const navLinks = document.querySelectorAll('.nav-links a');
+        const checkbox = document.getElementById('check');
 
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                checkbox.checked = false;
+            });
+        });
+
+        // Form Alert
+        document.getElementById('taxi-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert("Vielen Dank! Ihre Anfrage wurde gesendet.");
+            this.reset();
+        });
+    </script>
 </body>
-
 </html>
-
-
