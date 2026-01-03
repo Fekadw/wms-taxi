@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>  WMS Premium Fahrservice </title>
+    <title>  WMS Premium Mietwagen </title>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css" 
@@ -12,7 +12,7 @@
 
 <body>
 
-    <a href="https://wa.me/491786670692" class="whatsapp-float" target="_blank">
+    <a href="https://wa.me/49123456789" class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
 
@@ -81,28 +81,39 @@
                     <h2>Fahrtanfrage senden</h2>
                     <form action="https://formspree.io/f/mvgadqry" method="POST">
     <div class="input-row">
-        <input type="text" name="name" placeholder="Vollständiger Name" required>
-        <input type="email" name="email" placeholder="E-Mail" required>
-    </div>
-    
-    <div class="input-row">
-        <input type="date" name="datum" required>
-        <input type="time" name="uhrzeit" required>
-    </div>
+    <input type="text" name="vorname" placeholder="Vorname" required>
+    <input type="text" name="nachname" placeholder="Nachname" required>
+</div>
 
-    <div class="route-container">
-        <div class="route-line"></div>
-        <div class="route-inputs">
-            <div class="input-with-icon">
-                <i class="fas fa-circle start-dot"></i>
-                <input type="text" name="abholort" placeholder="Abholort (Straße, Stadt)" required>
-            </div>
-            <div class="input-with-icon">
-                <i class="fas fa-map-marker-alt end-dot"></i>
-                <input type="text" name="zielort" placeholder="Zielort (Zieladresse)" required>
-            </div>
+<div class="input-row">
+    <input type="tel" name="telefon" placeholder="Telefonnummer (für Rückfragen)" required>
+    <input type="email" name="email" placeholder="E-Mail Adresse" required>
+</div>
+
+<div class="input-row">
+    <div class="input-group">
+        <label for="datum" style="font-size: 12px; color: var(--gold); display: block; margin-bottom: 5px;">Wählen Sie ein Datum:</label>
+        <input type="date" id="datum" name="datum" required>
+    </div>
+    <div class="input-group">
+        <label for="uhrzeit" style="font-size: 12px; color: var(--gold); display: block; margin-bottom: 5px;">Wählen Sie eine Uhrzeit:</label>
+        <input type="time" id="uhrzeit" name="uhrzeit" required>
+    </div>
+</div>
+
+<div class="route-container">
+    <div class="route-line"></div>
+    <div class="route-inputs">
+        <div class="input-with-icon">
+            <i class="fas fa-circle start-dot"></i>
+            <input type="text" name="abholort" placeholder="Abholort (Straße, Stadt)" required>
+        </div>
+        <div class="input-with-icon">
+            <i class="fas fa-map-marker-alt end-dot"></i>
+            <input type="text" name="zielort" placeholder="Zielort (Zieladresse)" required>
         </div>
     </div>
+</div>
     
     <textarea name="nachricht" rows="4" placeholder="Besondere Wünsche (Personenanzahl, Gepäck...)"></textarea>
     <button type="submit" class="submit-btn">KOSTENLOSE ANFRAGE ABSCHICKEN</button>
@@ -148,6 +159,3 @@
     </script>
 </body>
 </html>
-
-
-
