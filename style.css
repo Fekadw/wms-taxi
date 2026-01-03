@@ -92,44 +92,79 @@
         .service-card i { font-size: 3.5rem; color: var(--gold); margin-bottom: 25px; }
 
         /* --- FORMULAR --- */
-        .form-container {
-           background: var(--grey); 
-           padding: 40px; 
-           border-radius: 20px;
-           max-width: 800px;
-           margin: 0 auto;
-         }
-    .input-row {
-     display: grid; 
-     margin-bottom: 15px;
-     grid-template-columns: 
-     1fr 1fr; gap: 20px;
-     
-     }
-    input, textarea {
-     width: 100%; 
-     background: #0a0a0a; 
-     border: 1px solid #333; 
-     padding: 15px;
-     border-radius: 10px; 
-     color: white;
-     margin-bottom: 15px; 
-    }
-    .route-container {
-     position: relative;
-      padding-left: 30px;
-       margin: 20px 0; 
-    }
-    .route-line {
-     position: absolute; 
-     left: 10px; 
-     top: 10px; 
-     bottom: 10px;
-      width: 1px;
-       border-left: 2px dashed rgba(212,175,55,0.3);
-     }
-.submit-btn { width: 100%; padding: 18px; background: var(--gold); border: none; border-radius: 10px; font-weight: bold; cursor: pointer; }
+        /* --- HEADER & NAVIGATION --- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: #000;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 
+/* Versteckt die Checkbox */
+#check {
+    display: none;
+}
+
+/* Styling für das Hamburger-Icon */
+.menu-btn {
+    font-size: 25px;
+    color: var(--gold);
+    cursor: pointer;
+    display: none; /* Am Desktop versteckt */
+}
+
+/* Nav-Links am Desktop */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: var(--gold);
+}
+
+/* --- MOBILE ANSICHT (Responsive) --- */
+@media (max-width: 768px) {
+    .menu-btn {
+        display: block; /* Hamburger jetzt sichtbar */
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%; /* Direkt unter dem Header */
+        left: -100%; /* Links außerhalb des Bildschirms versteckt */
+        width: 100%;
+        height: 100vh;
+        background: #000;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+        transition: all 0.5s ease;
+    }
+
+    /* Wenn die Checkbox aktiviert ist, schiebe das Menü ins Bild */
+    #check:checked ~ .nav-links {
+        left: 0;
+    }
+
+    /* Formular auf Mobile einspaltig machen */
+    .input-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
         /* --- FOOTER --- */
         footer { background: #0a0a0a; padding: 60px 8% 20px; border-top: 1px solid #333; color: var(--text-gray); }
         .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 40px; }
@@ -163,6 +198,7 @@
             .full-width { grid-column: span 1; }
             .whatsapp-float { width: 50px; height: 50px; bottom: 20px; right: 20px; }
         }
+
 
 
 
