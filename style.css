@@ -100,7 +100,8 @@
            margin: 0 auto;
          }
     .input-row {
-     display: grid; 
+     display: flex; 
+     margin-bottom: 15px;
      grid-template-columns: 
      1fr 1fr; gap: 20px;
      
@@ -135,7 +136,10 @@
         .footer-col a { color: var(--text-gray); text-decoration: none; }
 
         /* --- RESPONSIVITY (MOBILE FIX) --- */
-        @media (max-width: 768px) {
+        @media (max-width: 600px) {
+                .input-row {
+                        flex-direction: column;
+                        gap: 0;
             .menu-btn { display: block; } /* Zeige das Icon */
             
             .nav-links {
@@ -160,3 +164,4 @@
             .full-width { grid-column: span 1; }
             .whatsapp-float { width: 50px; height: 50px; bottom: 20px; right: 20px; }
         }
+
